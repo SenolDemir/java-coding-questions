@@ -1,4 +1,4 @@
-package control.statements;
+package loops;
 
 public class ArmstrongNumber {
 
