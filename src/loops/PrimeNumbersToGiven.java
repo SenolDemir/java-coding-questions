@@ -1,6 +1,8 @@
 package loops;
 
-public class PrimeNumbersInRange {
+public class PrimeNumbersToGiven {
+
+
 
     public static void main(String[] args) {
 
@@ -8,13 +10,15 @@ public class PrimeNumbersInRange {
         String  primeNumbers = "";
         int last = 200;
 
-        for (int i = 1; i <= last; i++){
+        for (int i = 3; i <= last; i++){
             int counter=0;
-            for(int num =i; num>=1; num--){
-                if(i%num==0)
-                    counter = counter + 1;
+            for(int j =2; j<i; j++){
+                if(i%j==0)
+                    counter++;
+                continue;
             }
-            if (counter ==2){
+            if (counter ==0){
+                System.out.println(i + " is a prime number");
                 primeNumbers = primeNumbers + i + " ";
             }
         }
@@ -23,6 +27,9 @@ public class PrimeNumbersInRange {
 
 
     }
+
+
+
 
 
 }

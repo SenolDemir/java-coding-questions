@@ -1,5 +1,7 @@
 package loops;
 
+import java.util.Arrays;
+
 public class DecimalToBinary {
 
     /**
@@ -47,6 +49,34 @@ public class DecimalToBinary {
         for(int i = index-1;i >= 0;i--){
             System.out.print(binary[i]);
         }
+
+
+        System.out.println();
+        System.out.println("------------------------------");
+
+        //3. With Math.pow()
+
+        int[] binaryArr = {0,0,0,0,0,0,0,0};
+
+        double decimalNumber = 44;  // We need use double because of Math.pow()
+        int indexNum = 0;
+
+        for (int i = 0; i<=8 ; i++) {
+            if(decimalNumber<Math.pow(2,i)) {
+                indexNum = i;
+                break;
+            }
+        }
+        System.out.println("indexNum = " + indexNum);
+
+        for(int i = index; i>=0; i--){
+            if(Math.pow(2, indexNum-1)<= decimalNumber){
+                binaryArr[8-i]=1;
+                decimalNumber = decimalNumber - Math.pow(2, indexNum-1);
+            }
+            indexNum--;
+        }
+        System.out.println(Arrays.toString(binaryArr));
 
 
 

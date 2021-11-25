@@ -33,6 +33,7 @@ public class PrintAlphabet {
 		 */
 
         System.out.println();
+
         String letters = "";
         char l = 'A';
         letters += l;  //concat  letters = letters + l = > "" + A  = > A
