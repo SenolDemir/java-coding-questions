@@ -1,6 +1,6 @@
 package methods;
 
-public class CalculatorMethod {
+public class Calculator {
 
     public static void main(String[] args) {
 

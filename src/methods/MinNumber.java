@@ -1,6 +1,6 @@
 package methods;
 
-public class MinNumWithMethod {
+public class MinNumber {
 
     public static void main(String[] args) {
 

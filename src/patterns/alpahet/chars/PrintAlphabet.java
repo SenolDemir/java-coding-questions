@@ -1,4 +1,4 @@
-package loops;
+package patterns.alpahet.chars;
 
 public class PrintAlphabet {
 

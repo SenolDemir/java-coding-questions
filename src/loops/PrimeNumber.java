@@ -48,6 +48,24 @@ public class PrimeNumber {
         return true;
     }
 
+    //3
+    public static void isPrime(int num){
+
+        int count = 0;
+        if(num<2){
+            System.out.println(num + " is not a prime number");
+        }
+        for(int i = 2; i<num; i++){
+            if(num%i==0) count++;
+            break;
+        }
+        if(count==0){
+            System.out.println(num + " is a prime number");
+        }else{
+            System.out.println(num + " is not a prime number");
+        }
+    }
+
 
 
 }

@@ -1,4 +1,4 @@
-package loops;
+package patterns.numeric;
 
 public class PrintDecreasingNumbers {
 

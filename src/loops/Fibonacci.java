@@ -25,6 +25,7 @@ public class Fibonacci {
         }
 
         System.out.println();
+
         // 2
         // 15) baslangic rakamlari 1 ve 2 olarak 15 tane fibonacci rakami yazdiralim.
         int f1 = 1;
@@ -39,6 +40,22 @@ public class Fibonacci {
             f2=total;
 
         }
+
+        System.out.println();
+        System.out.println("-------------------------------");
+
+        // starts with 1 1 2 3 5 ..
+        int a = 1;
+        int b = 1;
+
+        for(int i=0; i<12; i++){
+            System.out.print(a + " ");
+            int sum = a + b;
+            a = b;
+            b = sum;
+        }
+
+
 
 
 
