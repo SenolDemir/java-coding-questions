@@ -1,5 +1,6 @@
 package reading.user.input;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class GuessTheNumber {
@@ -24,24 +25,36 @@ public class GuessTheNumber {
 
     public static void main(String[] args) {
 
-        int secretnumber=9;
-        int inputnumber;
-        int attempt = 0;
-        boolean flag = false;
 
+        guessGame();
+
+
+    }
+
+    public static void guessGame(){
+        Random rn = new Random();
+        int secretNumber = rn.nextInt(30)+1;
+        int inputNumber;
+        int attempt=0;
+        Scanner keyboard = new Scanner(System.in);
         do{
-            Scanner keyboard = new Scanner(System.in);
-            System.out.println("Enter a number between 1-30 :");
-            inputnumber = keyboard.nextInt();
+            System.out.print("Enter a number between 1-30 :");
+
+            inputNumber = keyboard.nextInt();
             attempt++;
-            if(inputnumber<secretnumber){
-                System.out.println(inputnumber + " is too large, please try again!");
-            }else if(inputnumber>secretnumber){
-                System.out.println(inputnumber + " is too small, please try again!");
+
+            if(inputNumber<0 || inputNumber>30){
+                System.out.println(inputNumber + " is out of range");
+            }else if(inputNumber>secretNumber){
+                System.out.println(inputNumber + " is too large, please try again!");
+            }else if(inputNumber<secretNumber){
+                System.out.println(inputNumber + " is too small, please try again!");
             }else {
                 System.out.println("Bravo!!, You got the number in  " + attempt + " attempt");
             }
-        }while(inputnumber!=secretnumber);
+        }while(inputNumber!=secretNumber);
 
     }
+
+
 }
