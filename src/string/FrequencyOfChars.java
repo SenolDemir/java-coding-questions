@@ -1,21 +1,34 @@
-package coding.tasks;
+package string;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 
-public class FrequencyOfCharInString {
+public class FrequencyOfChars {
 
     /**
-    5. Write a return method that can find the frequency of
-    characters
-    Ex: FrequencyOfChars("AAABBCDD") ==> A3B2C1D2
+        Interview Coding task 5
+        Write a return method that can find the frequency of
+        characters
+        Ex: FrequencyOfChars("AAABBCDD") ==> A3B2C1D2
      */
 
     public static void main(String[] args) {
 
         String str ="AAABBCCDDDDDEE";
 
-        //Solution 1
+        //Solution 1 for loop
+        System.out.println(frequencyOfChars(str));
+
+        //Solution 2 while loop
+        System.out.println(frequencyOfChars2(str));
+
+        //Solution 3
+        System.out.println(frequencyOfCharsWithCollection(str));
+
+
+    }
+
+    public static String frequencyOfChars(String str){
         String nonDup = "";
         String result = "";
 
@@ -33,18 +46,10 @@ public class FrequencyOfCharInString {
             }
             result += "" + nonDup.charAt(i) + count;
         }
-        System.out.println(result);
-
-        //Solution 2
-        System.out.println(frequencyOfChars(str));
-
-        //Solution 3
-        System.out.println(FrequencyOfChars(str));
-
-
+        return result;
     }
 
-    public static String frequencyOfChars(String str) {
+    public static String frequencyOfChars2(String str) {
         String expectedResult = "";
         int j=0;
         while( j < str.length()) {
@@ -60,10 +65,13 @@ public class FrequencyOfCharInString {
         return expectedResult;
     }
 
-    public static String FrequencyOfChars(String str) {
+    public static String frequencyOfCharsWithCollection(String str) {
 
         String b=new LinkedHashSet<>(Arrays.asList(str.split(""))).toString();
-        b = b.replace(", ","").replace("[","").replace("]","");
+        b = b.replace(", ","")
+                .replace("[","")
+                .replace("]","");
+
         String result="";
         for(int j=0; j<b.length();j++) {
             int count=0;

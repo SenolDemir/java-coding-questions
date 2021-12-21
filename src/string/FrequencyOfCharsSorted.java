@@ -1,9 +1,9 @@
-package coding.tasks;
+package string;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-public class FrequencyOfCharsInStringInSorted {
+public class FrequencyOfCharsSorted {
 
     /**
     Java Coding Task 44. ( Using Treemap )

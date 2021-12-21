@@ -14,6 +14,8 @@ public class PrintAlphabet {
             System.out.print(letter+ " ");
             letter++;
         }
+
+        System.out.println("-------------------------------------");
         System.out.println();
         char letter2 = 'o';
 
@@ -21,6 +23,8 @@ public class PrintAlphabet {
             System.out.print(letter2 + " ");
             letter2--;
         }
+
+        System.out.println("-----------------------------------------------------");
 
 		/*
 		 A

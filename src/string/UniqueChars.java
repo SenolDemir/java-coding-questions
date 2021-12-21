@@ -1,12 +1,13 @@
-package coding.tasks;
+package string;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class UniqueCharsInString {
+public class UniqueChars {
 
     /**
-        3. Write a return method that can find the unique characters from the
+        Interview Coding Task 3
+        Write a return method that can find the unique characters from the
         String
         Ex: unique("AAABBBCCCDEF") ==> "DEF";
      */
@@ -16,7 +17,7 @@ public class UniqueCharsInString {
         String str = "AAABBBCCCDEF";
 
         //Solution 1
-        System.out.println(unique(str));
+        System.out.println(uniqueCharsWithCollection(str));
 
         //Solution 2
         System.out.println(uniqueChars(str));
@@ -24,7 +25,7 @@ public class UniqueCharsInString {
 
     }
 
-    public static String unique(String s){
+    public static String uniqueChars(String s){
         String[] arr = s.split("");
         String unique="";
 
@@ -41,7 +42,7 @@ public class UniqueCharsInString {
     }
 
 
-    public static String uniqueChars(String str) {
+    public static String uniqueCharsWithCollection(String str) {
         String result ="";
         for(String each : str.split(""))
             result += ( (Collections.frequency(Arrays.asList(str.split("")), each)) ==1 ) ? each : "";

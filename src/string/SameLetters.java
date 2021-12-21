@@ -1,12 +1,14 @@
-package coding.tasks;
+package string;
 
 import java.util.Arrays;
 import java.util.TreeSet;
+import java.util.function.BiPredicate;
 
 public class SameLetters {
 
     /**
-     1. Write a return method that check if a string is build out of the same
+     Interview Coding Task 1
+     Write a return method that check if a string is build out of the same
      letters as another string.
      Ex: same("abc", "cab"); -> true , same("abc", "abb"); -> false:
      */
@@ -14,12 +16,26 @@ public class SameLetters {
 
     public static void main(String[] args) {
 
-
-        //Solution 1
+        //Solution 1 (Arrays)
         System.out.println(sameLetters("abcd", "dcab"));
 
-        //Solution 2
+        //Solution 2  (Collection)
         System.out.println(sortedSameLetters("abcd", "dcab"));
+
+
+        System.out.println("--------------------------------------------------");
+
+        //4: With Functional Interface
+        BiPredicate<String, String> sameLetters = (a,b) -> {
+            char [] ch1 = a.toCharArray();
+            char [] ch2 = b.toCharArray();
+            Arrays.sort(ch1);
+            Arrays.sort(ch2);
+            return Arrays.equals(ch1, ch2);
+        };
+
+        System.out.println(sameLetters.test("financial", "cialfinan"));
+
 
 
     }
@@ -41,8 +57,7 @@ public class SameLetters {
         for (char lt: bChars){
             newB += lt;
         }
-
-     return  newA.equals(newB);
+        return  newA.equals(newB);
     }
 
     public static boolean sortedSameLetters(String str1, String str2) {
@@ -50,7 +65,14 @@ public class SameLetters {
         str2 = new TreeSet<String>(Arrays.asList(str2.split(""))).toString();
         return str1.equals(str2);
 
-
-
     }
+
+
+
+
+
+
+
+
+
 }
