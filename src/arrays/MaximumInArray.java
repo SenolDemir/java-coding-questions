@@ -1,6 +1,6 @@
 package arrays;
 
-public class MaxInArray {
+public class MaximumInArray {
 
     /*
         Write a method that can find the maximum number from an int Array
