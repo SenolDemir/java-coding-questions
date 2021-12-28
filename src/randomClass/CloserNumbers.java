@@ -20,9 +20,9 @@ public class CloserNumbers {
         int bcDiff = Math.abs(b-c);
 
         if(abDiff==bcDiff && abDiff<acDiff){
-            System.out.println(a + " and "+ b + " are same close as " + b +" and " + c);
+            System.out.println("Difference between " + a + " and " + b + " is same as " + b +" and " + c);
         }else if(acDiff==bcDiff && acDiff<abDiff){
-            System.out.println(a + " and "+ c + " are same close as " + b +" and " + c);
+            System.out.println("Difference between "+ a + " and "+ c + " are same as " + b +" and " + c);
         }else if(abDiff<bcDiff && abDiff<acDiff){
             System.out.println("The most closer numbers: " + a +" and " + b);
         }else if(acDiff<bcDiff){

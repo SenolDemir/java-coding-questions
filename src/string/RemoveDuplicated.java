@@ -16,15 +16,11 @@ public class RemoveDuplicated {
         //1 for loop
         System.out.println(removeDuplicated("AABBCDDDE"));
 
-        //2 StringBuffer
-        System.out.println(removeDuplicatedWithBuffer("AABBCDDDE"));
-
-        //3 Collection
+        //2 Collection
         System.out.println(removeDuplicatedWithCollection("AABBCDDDE"));
 
 
     }
-
 
     public static String removeDuplicated (String str){
         String result= "";
@@ -37,11 +33,6 @@ public class RemoveDuplicated {
         return result;
     }
 
-
-    public static String removeDuplicatedWithBuffer(String str){
-        String result = new StringBuffer(str).reverse().toString();
-        return result;
-    }
 
     public static String removeDuplicatedWithCollection(String str) {
         str = new LinkedHashSet<String>(Arrays.asList(str.split(""))).toString();

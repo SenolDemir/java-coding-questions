@@ -3,12 +3,13 @@ package string;
 public class FirstUniqueChar {
 
       /**
-        write a program that can return the first non-repeated character from a string
+        Interview Coding Questions 38
+        Write a program that can return the first non-repeated character from a string
      */
 
     public static void main(String[] args) {
 
-        String str = "pprr";
+        String str = "pprrsttt";
         System.out.println(firstUniqueChar(str));
 
 

@@ -5,16 +5,19 @@ public class CharOccurance {
     public static void main(String[] args) {
 
         String name="abcaqbcabcaa";
-        name.charAt(0);
-        name.length();
-        int count=0;
 
-        for (int i=0; i<name.length(); i++) {
-            if (name.charAt(i)=='a') {
+        charOccurance(name, 'z');
+    }
+
+
+    public static void charOccurance(String str, char ch){
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if(str.charAt(i)==ch){
                 count++;
             }
         }
-        System.out.println("Number of a in this word is " + count);
+        System.out.println("Number of "+ch+" in the word "+str+" is: "+count);
     }
 
 

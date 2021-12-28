@@ -11,7 +11,11 @@ public class ReverseString {
     public static void main(String[] args) {
 
 
+        //1  for loop
         reverse("Java Programming");
+
+        //2 StringBuffer
+        System.out.println(reverseWithBuffer("Java Programming"));
 
 
     }
@@ -25,5 +29,10 @@ public class ReverseString {
         System.out.println(reversed);
 
         return reversed;
+    }
+
+    public static String reverseWithBuffer(String str){
+        String result = new StringBuffer(str).reverse().toString();
+        return result;
     }
 }

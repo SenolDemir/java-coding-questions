@@ -17,12 +17,35 @@ public class UniqueChars {
         String str = "AAABBBCCCDEF";
 
         //Solution 1
-        System.out.println(uniqueCharsWithCollection(str));
+        //with charAt()
+        System.out.println(uniqueChar(str));
 
         //Solution 2
+        //With array
+        System.out.println(uniqueCharsWithCollection(str));
+
+        //Solution 3
+        //Eith Collection
         System.out.println(uniqueChars(str));
 
 
+    }
+
+    public static String uniqueChar(String str){
+        String result = "";
+
+        for(int i=0; i<str.length(); i++){
+            int count = 0;
+            for(int j=0; j<str.length(); j++) {
+                if (str.charAt(j)==str.charAt(i)) {
+                    count++;
+                }
+            }
+            if(count==1){
+                result += str.charAt(i);
+            }
+        }
+        return result;
     }
 
     public static String uniqueChars(String s){
