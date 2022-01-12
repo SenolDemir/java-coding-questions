@@ -23,6 +23,7 @@ public class RemoveDuplicated {
     }
     //Solution 1
     public static int[] removeDuplicates(int[] array){
+
         return Arrays.stream(array).distinct().toArray();
     }
 

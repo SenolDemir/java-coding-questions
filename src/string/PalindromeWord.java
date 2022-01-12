@@ -3,7 +3,11 @@ package string;
 public class PalindromeWord {
 
     /*
-        Palindrome Words: wow, carerac, level, madam, ...
+        A word is called a palindrome word if the reverse of it is the same as the original.
+	    For example, radar, level, wow, carerac, level, madam, etc
+	    ey edip adanada pide ye
+	    Create a program to check if given string is a palindrome word or not.
+
      */
 
     public static void main(String[] args) {

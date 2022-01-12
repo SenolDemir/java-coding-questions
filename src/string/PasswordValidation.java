@@ -5,6 +5,9 @@ import java.util.function.Predicate;
 public class PasswordValidation {
 
     /***
+        Interview Coding Questions 6
+        Write a return method that can verify if a password is valid or not.
+        requirements:
         1. Password MUST be at least 8 characters
         2. Password should at least contain one uppercase letter
         3. Password should at least contain one lowercase letter
@@ -56,6 +59,7 @@ public class PasswordValidation {
     }
 
     public static boolean passwordValidation(String password) {
+
         String lowercase="(.*[a-z].*)";
         String uppercase="(.*[A-Z].*)";
         String numbers="(.*[0-9].*)";

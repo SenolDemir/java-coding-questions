@@ -3,7 +3,8 @@ package string;
 public class CheckWord {
 
     /*
-    Write a method that accepts 2 strings(str1,str2) and checks if second string exist in first one.
+    Write a method that accepts 2 strings(str1,str2) and checks
+    if second string exist in first one.
     If second exists, should print the position index.
      */
 
