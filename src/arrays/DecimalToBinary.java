@@ -1,21 +1,22 @@
-package loops;
+package arrays;
 
 import java.util.Arrays;
 
 public class DecimalToBinary {
 
     /**
-    Java Coding Task 23.
-    return the number of '1's in the binary representation of n for
-    any integer n, where n > 0
-    Example: for n=6 the binary representation is '110' and the
-    number of '1's in that
-    representation is 2
+        Java Coding Task 23.
+        Convert decimal number to binary
+        return the number of '1's in the binary representation of n for
+        any integer n, where n > 0
+        Example: for n=6 the binary representation is '110' and the
+        number of '1's in that
+        representation is 2
 
-     --------------------------------------------------------
+        --------------------------------------------------------
 
-     There are numerous approaches to convert the given decimal number
-     into an equivalent binary number in Java. A few of them are listed below.
+        There are numerous approaches to convert the given decimal number
+        into an equivalent binary number in Java. A few of them are listed below.
          1. Using Arrays or String
          2. Using Bitwise Operators
          3. Using Math.pow() Function (Without using arrays)
