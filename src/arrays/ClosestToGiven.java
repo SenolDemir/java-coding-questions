@@ -14,7 +14,7 @@ public class ClosestToGiven {
 
     public static void main(String[] args) {
 
-        int[] arr = {2,4,6,9,15, 23, 45, 67};
+        int[] arr = {2,4,6,9,15, 23, 45, 67, 67};
         System.out.println(closestInArray(arr, 62));
 
     }
