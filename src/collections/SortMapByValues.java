@@ -20,6 +20,8 @@ public class SortMapByValues {
 
         System.out.println(sortByValue(map));
 
+        
+
     }
 
     public static Map<String, Integer> sortByValue(Map<String, Integer> map){

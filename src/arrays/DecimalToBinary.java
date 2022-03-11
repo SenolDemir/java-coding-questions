@@ -25,59 +25,53 @@ public class DecimalToBinary {
 
     public static void main(String[] args) {
 
-        // This is easy way using string
-        int n = 44;
-        String s = "";
+        int decimal = 44;
 
-        while (n>0) {
-            s = ((n % 2) == 0 ? "0" : "1") + s;
-            n = n / 2;
+        // This is easy way using string
+        String s = "";
+        while (decimal>0) {
+            s = ((decimal % 2) == 0 ? "0" : "1") + s;
+            decimal = decimal / 2;
         }
         System.out.println(s);
 
         System.out.println("-------------------------");
 
-        //2
-        int decimal = 44;
 
+        //2 with array
+        decimal = 780;
         int binary[] = new int[40];
         int index = 0;
-
         while(decimal > 0){
             binary[index++] = decimal%2;
             decimal = decimal/2;
+
         }
+
         for(int i = index-1;i >= 0;i--){
             System.out.print(binary[i]);
         }
-
-
         System.out.println();
+
+        // assigning to new array and display as array
+        int[] newBinary = new int[index];
+
+        for (int i= index-1, j=0; i>=0; i--, j++ ){
+            newBinary[j] = binary[i];
+        }
+        System.out.println(Arrays.toString(newBinary));
+
         System.out.println("------------------------------");
 
-        //3. With Math.pow()
+        //Integer.toBinaryString()
+        int decimalNum = 780;
+        String bin = Integer.toBinaryString(decimalNum);
+        System.out.println(bin);
 
-        int[] binaryArr = {0,0,0,0,0,0,0,0};
 
-        double decimalNumber = 44;  // We need use double because of Math.pow()
-        int indexNum = 0;
 
-        for (int i = 0; i<=8 ; i++) {
-            if(decimalNumber<Math.pow(2,i)) {
-                indexNum = i;
-                break;
-            }
-        }
-        System.out.println("indexNum = " + indexNum);
 
-        for(int i = index; i>=0; i--){
-            if(Math.pow(2, indexNum-1)<= decimalNumber){
-                binaryArr[8-i]=1;
-                decimalNumber = decimalNumber - Math.pow(2, indexNum-1);
-            }
-            indexNum--;
-        }
-        System.out.println(Arrays.toString(binaryArr));
+
 
 
 

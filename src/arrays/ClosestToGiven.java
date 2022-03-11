@@ -14,8 +14,10 @@ public class ClosestToGiven {
 
     public static void main(String[] args) {
 
-        int[] arr = {2,4,6,9,15, 23, 45, 67, 67};
+        int[] arr = {2,4,6,9,15, 23, 45, 67, 57};
         System.out.println(closestInArray(arr, 62));
+
+        closestToGiven(arr, 62);
 
     }
 
@@ -29,5 +31,28 @@ public class ClosestToGiven {
             }
         }
         return result;
+    }
+
+
+    //2 To cover more than 1 result
+    public static void closestToGiven(int[] arr, int key) {
+
+        int n = arr.length;
+        int[] a1 = new int[n];
+        int minDiff = Math.abs(arr[0]-key);
+
+        for (int i = 0; i < n; i++) {
+            a1[i] = Math.abs( arr[i]-key);
+            if(a1[i] < minDiff) {
+                minDiff = a1[i];
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (a1[i] != minDiff) {
+                continue;
+            }else {
+                System.out.print(arr[i] + " ");
+            }
+        }
     }
 }

@@ -6,9 +6,8 @@ public class RemoveGivenNamesFromList {
 
     /**
         Interview Coding Questions 18
-        Given a list of people' names: "Ahmed", "John", Eric",
-        "Ahmed".....
-        Write a java operation to remove all the names named Ahmed
+        Given a list of people' names like "Ahmed", "John", Eric",
+        Write a java program to remove all the names according to the given
      */
 
     public static void main(String[] args) {

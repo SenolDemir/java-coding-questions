@@ -8,8 +8,12 @@ public class IntersectionOfParameters {
 
     /**
         Interview Coding Questions 31
-        Write a metot which returns a Set equal to the intersection of the parameter of 2 Sets
-        The method should not chage the content of the parameters.
+        Write a program which returns a Set equal to the intersection of the elements of 2 Sets
+        The method should not chage the content of the elements.
+        Example:
+        [2,7,12,78],
+        [2,6,13,78,90]
+        result: [2, 78]
      */
 
     public static void main(String[] args) {
