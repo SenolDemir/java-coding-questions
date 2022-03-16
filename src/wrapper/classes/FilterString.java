@@ -2,6 +2,10 @@ package wrapper.classes;
 
 public class FilterString {
 
+	/**
+		Write a method that filters a given string and return only alphabetic characters as string.
+	 */
+
 	public static void main(String[] args) {
 
 

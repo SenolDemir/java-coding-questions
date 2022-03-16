@@ -6,7 +6,7 @@ public class PasswordValidation {
 
     /***
         Interview Coding Questions 6
-        Write a return method that can verify if a password is valid or not.
+        Write a method that can verify if a password is valid or not.
         requirements:
         1. Password MUST be at least 8 characters
         2. Password should at least contain one uppercase letter

@@ -17,7 +17,6 @@ public class PhoneNumberReformat {
         format it as "004-448-555-583-61".
 
         Write a function:
-                class Solution { public String solution (String s); }
         that, given a string S representing a phone number, returns this phone number
         reformatted as described above.
         For example, given S = "00-44 48 5555 8361", the function should return "004-448-555-583-61".
@@ -27,8 +26,7 @@ public class PhoneNumberReformat {
         • N is an integer within the range [2..100];
         • string S consists only of digits (0-9), spaces and/or dashes (-);
         • string S contains at least two digits.
-        In your solution, focus on correctness. The performance of your solution will
-        not be the focus of the assessment.
+        In your solution, focus on correctness.
      */
 
     public static void main(String[] args) {
