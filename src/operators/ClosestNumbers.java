@@ -1,4 +1,4 @@
-package operators;
+package control;
 
 public class ClosestNumbers {
 
