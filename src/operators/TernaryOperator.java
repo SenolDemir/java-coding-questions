@@ -1,5 +1,7 @@
 package operators;
 
+import java.util.Scanner;
+
 public class TernaryOperator {
 
 
@@ -32,7 +34,9 @@ public class TernaryOperator {
             80’nin uzerinde ise “A” yazdirin
         */
 
-        int not = 110;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input your point: ");
+        int not = input.nextInt();
 
         String mark1 = not<50 ?  "D" :
                 not<60 ? "C":

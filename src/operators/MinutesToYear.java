@@ -18,5 +18,14 @@ public class MinutesToYear {
         System.out.println(year);
         System.out.println(min + " minutes is: " + year + " years " + dayBalance + " days " + hourBalance +" hours " + minBalance + " minutes");
 
+        // Second  Solution
+        double minutesInYear = 60 * 24 * 365;
+        long years = (long) (min /minutesInYear);
+        int days = (int) (min/60/24) % 365;
+        System.out.println(min + " minutes is: " + years + " years " + days +" days");
+
+
+
+
     }
 }
