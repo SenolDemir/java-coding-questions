@@ -2,47 +2,35 @@ package control.statements;
 
 public class ClosestNumbers {
 
+
     public static void main(String[] args) {
 
-        int a=210;
-        int b=120;
-        int c = 200;
-        int abDiff, acDiff, bcDiff;
 
+        int a = 210;
+        int b = 20;
+        int c = 300;
 
-        if(a>b) abDiff= a-b;
-        else abDiff = b-a;
+        int aDiffb, aDiffc, bDiffc;
 
-        if(a>c) acDiff= a-c;
-        else acDiff = c-a;
+        if (a > b) aDiffb = a - b;
+        else aDiffb = b - c;
 
-        if(b>c) bcDiff = b-c;
-        else bcDiff = c-b;
+        if (a > c) aDiffc = a - c;
+        else aDiffc = a - c;
 
-        if(abDiff<bcDiff && abDiff<acDiff){
-            System.out.println("The most closer numbers: " + a +" and " + b);
-        }else if(acDiff<bcDiff){
-            System.out.println("The most closer numbers: " + a +" and " + c);
-        }else {
-            System.out.println("The most closer numbers: " + b +" and " + c);
+        if (b > c) bDiffc = b - c;
+        else bDiffc = c - b;
+
+        if (aDiffb < aDiffc && aDiffb < bDiffc) {
+            System.out.println("The closest number is :" + a + " and " + b);
+        } else if (aDiffc < bDiffc) {
+            System.out.println("The closest number is :" + a + " and " + c);
+        } else {
+            System.out.println("The closest number is :" + b + " and " + c);
         }
-
-        // 2
-        // By using Math Class
-
-        abDiff = Math.abs(a-b);
-        acDiff = Math.abs(a-c);
-        bcDiff = Math.abs(b-c);
-
-        if(abDiff<bcDiff && abDiff<acDiff){
-            System.out.println("The most closer numbers: " + a +" and " + b);
-        }else if(acDiff<bcDiff){
-            System.out.println("The most closer numbers: " + a +" and " + c);
-        }else {
-            System.out.println("The most closer numbers: " + b +" and " + c);
-        }
-
 
 
     }
+
+
 }

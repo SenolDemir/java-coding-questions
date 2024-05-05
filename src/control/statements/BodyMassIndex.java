@@ -20,25 +20,26 @@ public class BodyMassIndex {
 
      */
 
+
     public static void main(String[] args) {
 
+        double mass = 120;
+        double height = 1.76;
+        double BMI = mass/ (height*height);
+        System.out.println(BMI);
 
-        double mass = 89;
-        double height = 1.82;
-
-        double BMI = mass / (height * height);
-
-        System.out.println("BMI = " + BMI);
-
-        if (mass<20){
-            System.out.println("Your are under normal rate");
-        }else if (mass>=20 && mass<27){
-            System.out.println("Your are in normal rate");
-        }else if (mass>=27 && mass<32){
-            System.out.println("Your are over weight");
-        }else if (mass<32){
-            System.out.println("Your are obezz");
+        if(BMI<20){
+            System.out.println("Underwight");
+        } else if (BMI>=20 && BMI<25) {
+            System.out.println("Normal Weight");
+        } else if (BMI>=25 && BMI<30) {
+            System.out.println("Overweight");
+        } else if (BMI>=30) {
+            System.out.println("Obese");
         }
 
     }
+
+
+
 }

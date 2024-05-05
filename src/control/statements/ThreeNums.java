@@ -27,7 +27,23 @@ public class ThreeNums {
 
     public static void main(String[] args) {
 
+        int n1 = 4;
+        int n2 = 3;
+        int n3 = 5;
 
+       if (n1==n2 && n1>n3){
+           System.out.println("The biggest numbers are n1 and n2");
+       }else if(n1>n2 && n1>n3){
+           System.out.println("The biggest numbers are n1: "+ n1);
+       }else if(n2==n3 && n2>n1){
+           System.out.println("The biggest numbers are n2 and n3: " + n3);
+       } else if (n2>n3) {
+           System.out.println("The biggest numbers are n2: "+ n2);
+       } else if (n1==n3 && n1>n2) {
+           System.out.println("The biggest numbers are n1  and n3: " + n3);
+       }else {
+           System.out.println("The biggest numbers are n3: "+ n3);
+       }
 
 
     }

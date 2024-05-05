@@ -2,6 +2,8 @@ package control.statements;
 
 public class Score {
 
+
+
     public static void main(String[] args) {
 
         int score = 110;

@@ -7,14 +7,18 @@ public class EvenOrOddNumber {
         Write a program which can identifies given number is even or odd
      */
 
+
     public static void main(String[] args) {
 
-        int num = 12;
+        int num = 77;
 
-        if (num%2==0){
-            System.out.println(num + " is a even number");
+        if(num%2==0){
+            System.out.println(num + " is an even number");
         }else {
-            System.out.println(num + " is a odd number");
+            System.out.println(num + " is an odd number");
         }
     }
+
+
+
 }

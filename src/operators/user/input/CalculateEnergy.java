@@ -1,5 +1,6 @@
 package operators.user.input;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class CalculateEnergy {
@@ -24,6 +25,8 @@ public class CalculateEnergy {
         double iTemp = in.nextDouble();
         System.out.print("Enter the final tempurature for the water: ");
         double fTemp = in.nextDouble();
+
+
 
         double Q = mass * (fTemp-iTemp) * 4184;
         System.out.println("You need "+ Q + " energy to make the water hot.");

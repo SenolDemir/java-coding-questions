@@ -12,26 +12,33 @@ public class TelephoneBill {
      Plus $0.40 per call for any call beyond 200 calls.
      */
 
+
     public static void main(String[] args) {
 
+        int call = 190;
+        int addCall;
+        double bill = 200;
+        double addBill = 0;
 
 
 
-        int call=190;
+        if(call>100){
+            addCall = call-100;
 
-
-        if(call<=100) {
-            System.out.println("$" + 200);
-        }else if (call>100 && call<=150) {
-            double cost1=(call-100)*0.60;
-            System.out.println("$" + (cost1+200));
-        }else if(call>150 && call<=200) {
-            double cost2=(call-150)*0.50+(50*0.60);
-            System.out.println("$" + (cost2+200));
-        }else if(call>200) {
-            double cost3=(call-200)*0.40+(50*0.60+50*0.50);
-            System.out.println("$" + (cost3+200));
+           if (addCall<=50){
+               addBill = addCall * 0.60;
+           } else if (addCall<=100) {
+               addBill = (50 * 0.60) + ((addCall-50)*0.50);
+           } else if (addCall>100) {
+               addBill = (50 * 0.60) + (50 * 0.50) + (addCall-100)*0.40;
+           }
+           bill = bill+addBill;
+            System.out.println("$" +bill);
+        }else{
+            System.out.println("The bill is $" + bill);
         }
-
     }
+    
+    
+
 }

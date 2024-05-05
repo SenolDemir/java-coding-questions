@@ -14,32 +14,24 @@ public class Museum {
         Şu an müze açık
      */
 
+
     public static void main(String[] args) {
 
+        int day = 7;
+        int hour = 22;
 
-        int day = 4;
-        int saat = 27;
-
-        if (day>0 && day<6){
-            System.out.println("Hafta ici");
-            if(saat>=10 && saat<=20){
-                System.out.print("Muze su an acık");
-            }else if ((saat>0 && saat<10) || (saat>20 && saat<24) ){
-                System.out.println("Muze su an kapalı");
-            }else{
-                System.out.println("yanlıs saat girdiniz");
+        if (day>=1 && day<=5){
+            if(hour>=10 && hour<=20){
+                System.out.println("The museum is open now");
+            }else {
+                System.out.println("The museum is closed now");
             }
-        }else if (day==6 || day==7){
-            System.out.print("Hafta sonu");
-            System.out.println("Bugun Muze Kapalı");
-        }else{
-            System.out.println("Hatalı gun girdiniz");
+        }else {
+            System.out.println("The museum is closed now");
         }
-
-
-
-
-
-
     }
+
+
+
+
 }
