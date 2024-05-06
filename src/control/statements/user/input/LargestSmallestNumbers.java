@@ -1,4 +1,4 @@
-package reading.user.input;
+package control.statements.user.input;
 
 import java.util.Scanner;
 
@@ -24,40 +24,42 @@ public class LargestSmallestNumbers {
         hayır ise programı bitirin ve verilen sayılar arasındaki en büyük sayıyı görüntüleyin.)
      */
 
+
     public static void main(String[] args) {
 
-        int largest=0;
-        int smallest=0;
+
         int userInput;
-        int choose=0;
+        int choose = 0;
+        int smallest = 0;
+        int largest = 0;
 
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter your first number :");
-        userInput=sc.nextInt();
-
-        smallest=userInput;
-        largest=userInput;
+        System.out.print("Enter your first number : ");
+        userInput = sc.nextInt();
 
         do {
-            System.out.print("Enter your next number:");
-            userInput=sc.nextInt();
-            if (userInput>largest) {
-                largest=userInput;
-            }else if (userInput<smallest) {
-                smallest=userInput;
+            largest = userInput;
+            System.out.print("Enter your next number : ");
+            userInput = sc.nextInt();
+            if(userInput>largest) {
+                largest = userInput;
+            }else {
+                smallest = userInput;
             }
-            System.out.print("Do you want to enter another number : 0-No ; 1-Yes");
-            choose=sc.nextInt();
-            if (choose!=1) {
+
+            System.out.print("Do you want to enter another number ; 0-No ; 1-Yes : ");
+            choose = sc.nextInt();
+            if(choose!=1)
                 break;
-            }
-        }while (true);
+        }while(true);
 
         System.out.println("Largest number is " + largest);
         System.out.println("Smallest number is " + smallest);
 
+
     }
+
+
 
 
 }
