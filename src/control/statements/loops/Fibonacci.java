@@ -1,4 +1,4 @@
-package control.statements;
+package control.statements.loops;
 
 public class Fibonacci {
 
