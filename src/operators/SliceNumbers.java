@@ -1,6 +1,4 @@
-package control.statements;
-
-import java.util.Scanner;
+package operators;
 
 public class SliceNumbers {
 

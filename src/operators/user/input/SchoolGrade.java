@@ -1,4 +1,4 @@
-package control.statements;
+package operators.user.input;
 
 import java.util.Scanner;
 
