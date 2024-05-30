@@ -1,4 +1,4 @@
-package control.statements.patterns;
+package patterns.numbers;
 
 public class NumberPatterns {
 

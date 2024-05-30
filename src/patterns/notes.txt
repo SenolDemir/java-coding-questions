@@ -1,4 +1,0 @@
-
-*** Sources for pattern codings in Java (30 pattern Programs in Java)
-
-    https://www.edureka.co/blog/30-pattern-programs-in-java/

@@ -1,4 +1,4 @@
-package control.statements.loops;
+package loops;
 
 public class PrintNumbers {
 
