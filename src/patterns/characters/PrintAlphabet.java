@@ -1,4 +1,4 @@
-package patterns.alpahet.chars;
+package patterns.characters;
 
 public class PrintAlphabet {
 
@@ -35,15 +35,6 @@ public class PrintAlphabet {
 		 ......
 		 ABC.......Z
 		 */
-
-        System.out.println();
-
-        String letters = "";
-        char l = 'A';
-        letters += l;  //concat  letters = letters + l = > "" + A  = > A
-        l = 'B';
-        letters += l;  // letters = letters + l = > A + B = > AB
-        System.out.println(letters);
 
         char myLetter = 'A';
         String alphabet = "";
