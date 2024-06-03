@@ -23,7 +23,7 @@ public class ClosestToGiven {
 
     public static int closestInArray(int[] arr, int key){
         int result=0;
-        int diff = Math.abs(arr[0]-key);
+        int diff = Integer.MAX_VALUE;
         for (int i=0; i<arr.length; i++){
             if(Math.abs(arr[i]-key)<diff){
                 diff = Math.abs(arr[i]-key);

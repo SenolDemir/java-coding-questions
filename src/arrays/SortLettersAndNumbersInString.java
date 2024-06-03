@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortLettersAndNumbersInString {
 
-    /*
+    /**
     Given alphanumeric String,sort the string in its numeric and letters parts and display
     sorted alphanumeric string.
     We need to split the string into substrings of consecutive letters or numbers, sort the  individual

@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class MoveZerosToEnd {
+public class ZeroToEnd {
 
     /**
         Interview Coding 34

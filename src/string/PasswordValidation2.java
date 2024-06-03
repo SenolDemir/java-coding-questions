@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class PasswordValidation2 {
 
-    /*
+    /**
         Write a program that wants user to input a password. Then check password as if it has conditions;
         First character of password must be upper case
         Last character of password must be lower case
         It has no space
         It has minimum 8 characters or more
         If it has all those condition then print:
-           "Password created succesfully"
+        "Password created succesfully"
         If no:
-           "Password can not created succesfully. Please enter a new password"
-        ( Kullanicidan bir sifre girmesini isteyin Asagidaki sartlari sagliyorsa “Sifre
+        "Password can not created succesfully. Please enter a new password"
+        (Kullanicidan bir sifre girmesini isteyin Asagidaki sartlari sagliyorsa “Sifre
         basari ile tanimlandi”, sartlari saglamazsa “Islem basarisiz,Lutfen yeni bir sifre girin”
         yazdirin
         - Ilk harf buyuk harf olmali

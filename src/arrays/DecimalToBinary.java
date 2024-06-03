@@ -53,6 +53,7 @@ public class DecimalToBinary {
         }
         System.out.println();
 
+
         // assigning to new array and display as array
         int[] newBinary = new int[index];
 
@@ -67,6 +68,11 @@ public class DecimalToBinary {
         int decimalNum = 780;
         String bin = Integer.toBinaryString(decimalNum);
         System.out.println(bin);
+
+
+
+
+
 
 
 
