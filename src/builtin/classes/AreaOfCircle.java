@@ -1,4 +1,4 @@
-package user.inputs;
+package builtin.classes;
 
 import java.util.Scanner;
 

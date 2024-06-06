@@ -1,4 +1,4 @@
-package collections;
+package maps;
 
 import java.util.ArrayList;
 import java.util.HashMap;

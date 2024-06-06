@@ -1,4 +1,4 @@
-package randomClass;
+package builtin.classes;
 
 import java.util.Random;
 

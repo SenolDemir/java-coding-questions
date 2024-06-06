@@ -4,9 +4,11 @@ public class CharOccurance {
 
     public static void main(String[] args) {
 
-        String name="abcaqbcabcaa";
+        String name="abcaqbcabczaa";
 
         charOccurance(name, 'z');
+
+
     }
 
 

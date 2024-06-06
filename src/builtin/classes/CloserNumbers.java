@@ -1,4 +1,4 @@
-package randomClass;
+package builtin.classes;
 
 public class CloserNumbers {
 
